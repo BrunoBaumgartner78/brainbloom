@@ -1,0 +1,22 @@
+{
+  "name": "BrainBloom – Blog für mentale Gesundheit",
+  "short_name": "Bruno Baumgartner",
+  "description": "Ein Blog für Aufklärung, Verständnis und Hoffnung bei psychischer Erkrankung",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#94c973",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

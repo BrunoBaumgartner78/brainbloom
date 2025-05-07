@@ -1,0 +1,44 @@
+.main {
+    padding: 3rem 2rem;
+    background-color: #1d735d; /* Hellblauer Hintergrund */
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* immer 4 Karten nebeneinander */
+    gap: 2rem;
+  }
+  
+  .card {
+    background-color: wheat;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive: bei kleineren Bildschirmen weniger Spalten */
+  @media (max-width: 1200px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

@@ -1,0 +1,57 @@
+.blogPreviewSection {
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, #1d735d, #39977f);
+    color: white;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+  }
+  
+  .card {
+    background: rgb(255, 248, 236);
+    color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: left;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .image {
+    border-radius: 0.5rem;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.8rem 0 0.4rem 0;
+  }
+  
+  .excerpt {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .readMore {
+    color: #1d735d;
+    font-weight: bold;
+  }
+  

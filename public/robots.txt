@@ -1,0 +1,6 @@
+# robots.txt for brainbloom.ch
+User-agent: *
+Disallow:
+
+# Sitemap location
+Sitemap: https://brainbloom.ch/sitemap.xml

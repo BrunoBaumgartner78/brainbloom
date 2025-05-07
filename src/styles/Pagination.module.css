@@ -1,0 +1,28 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .pageNumber,
+  .arrow {
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .pageNumber:hover,
+  .arrow:hover {
+    background: #eee;
+  }
+  
+  .active {
+    font-weight: bold;
+    background: #000;
+    color: #fff;
+  }
+  
