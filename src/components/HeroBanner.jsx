@@ -8,7 +8,7 @@ export default function HeroFull() {
   return (
     <section className={styles.heroSection}>
       <Image
-        src="/brainbloom.png"
+        src="/brainbloom.webp"
         alt="Hero"
         fill
         sizes="100vw"

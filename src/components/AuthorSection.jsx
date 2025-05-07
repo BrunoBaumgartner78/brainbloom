@@ -7,7 +7,7 @@ export default function AuthorSection() {
       <div className={styles.container}>
         <div className={styles.imageWrapper}>
           <Image
-            src="/author.webp" // 🔁 Ersetze durch dein tatsächliches Bild
+            src="/Author.webp" // 🔁 Ersetze durch dein tatsächliches Bild
             alt="Bruno Baumgartner"
             width={200}
             height={200}
