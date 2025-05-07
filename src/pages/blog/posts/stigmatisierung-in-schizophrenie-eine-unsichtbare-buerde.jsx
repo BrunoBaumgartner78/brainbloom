@@ -1,3 +1,6 @@
+import "../../../app/globals.css";
+import "../../../styles/BlogPost.module.css";
+
 export default function StigmatisierungInSchizophrenie() {
     return (
       <article>

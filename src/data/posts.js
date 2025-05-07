@@ -60,7 +60,7 @@ const posts = [
     },
     {
       title: "Stigmatisierung in Schizophrenie: Eine unsichtbare Bürde",
-      slug: "stigmatisierung-in-schizophrenie-eine-unsichtbare-bürde",
+      slug: "stigmatisierung-in-schizophrenie-eine-unsichtbare-buerde",
       description:"Schizophrenie ist eine der am meisten missverstandenen psychischen Erkrankungen. Neben den Herausforderungen, die die Krankheit selbst mit sich bringt, erleben Betroffene oft eine zusätzliche Last: Stigmatisierung. Dieses soziale Stigma kann ebenso schwer wiegen wie die Krankheit selbst, da es Menschen mit Schizophrenie daran hindert, offen über ihre Erfahrungen zu sprechen, Unterstützung zu suchen und ihr Leben ohne Vorurteile zu leben.",
       image: "/stigma.webp",
       date: "2025-05-06"
