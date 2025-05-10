@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+  
+  label {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="date"] {
+    font-size: 1rem;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  .moon-phase {
+    font-size: 84px;
+    margin: 20px 0;
+  }
+  
+  .special-event {
+    font-size: 20px; /* Kleinere Schrift für spezielle Events */
+    color: #ffcc00; /* Goldene Farbe für bessere Sichtbarkeit */
+    font-style: italic;
+  }
+  
+  /* Responsives Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    .moon-phase {
+      font-size: 64px;
+    }
+  
+    .special-event {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.2rem;
+    }
+  
+    h2 {
+      font-size: 1rem;
+    }
+  
+    .moon-phase {
+      font-size: 48px;
+    }
+  
+    .special-event {
+      font-size: 14px;
+    }
+  }
+  

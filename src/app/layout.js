@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import CookieConsent from "@/components/CookieConsent";
+import MenuMond from "@/components/menuMoon";
 import { Metadata } from "next";
 
 const geistSans = Geist({
@@ -86,6 +87,7 @@ export default function RootLayout({ children }) {
       <head />
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
+        <MenuMond />
         <CookieConsent />
         <GoogleAnalytics gaId="G-V64C9R1260" />
       </body>
