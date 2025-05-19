@@ -4,7 +4,8 @@
 import React, { useState, useEffect } from "react";
 import moment from "moment";
 import '../../styles/App.css';
-const NASA_API_KEY = "YNLRvwxBvXNhxr89m4gs2DXeJp82xQIcHn9KrwqH";
+const NASA_API_KEY = process.env.REACT_APP_NASA_API_KEY;
+
 
 const MoonClock = () => {
   const [selectedDate, setSelectedDate] = useState(moment().format("YYYY-MM-DD"));

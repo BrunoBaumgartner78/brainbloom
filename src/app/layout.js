@@ -80,6 +80,12 @@ export const metadata = {
     "msapplication-config": "/browserconfig.xml",
   },
 };
+export const viewport = {
+  themeColor: "#94c973",
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({ children }) {
 
   return (
