@@ -39,6 +39,7 @@ export default function BooksSection() {
   return (
     <section className={styles.booksSection} id="books">
       <h2 className={styles.heading}>Meine Bücher</h2>
+      <p className={styles.shop}>Mit einem Klick zum Shop</p>
       <div className={styles.grid}>
         {books.map((book, index) => (
           <a
