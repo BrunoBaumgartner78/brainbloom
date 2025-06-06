@@ -95,7 +95,7 @@ export default function RootLayout({ children }) {
         {children}
         <MenuMond />
         <CookieConsent />
-        <GoogleAnalytics gaId="G-V64C9R1260" />
+        <GoogleAnalytics gaId="G-4HC298TS36" />
       </body>
     </html>
   );
