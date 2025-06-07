@@ -48,7 +48,7 @@ export default function HeroFull() {
 
       <div className={styles.content}>
         <h1 className={styles.title}>
-          Willkommen auf der offiziellen Seite von Bruno Baumgartner
+          Offizielle Seite des Schizophrenie Autor Bruno Baumgartner
         </h1>
         <p className={styles.subtitle}>
           Eine Reise zu Klarheit, Heilung und Bewusstsein

@@ -17,6 +17,7 @@ export default function Footer() {
           <ul className={styles.links}>
             <li><Link href="/">Home</Link></li>
             <li><Link href="#books">Bücher</Link></li>
+             <li><Link href="#newBooks">Neuerscheinung</Link></li>
             <li><Link href="#blog">Blog</Link></li>
             <li><Link href="#about">Autor</Link></li>
             <li><Link href="#about-books">Über die Bücher</Link></li>

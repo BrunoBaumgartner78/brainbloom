@@ -26,6 +26,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     width: 100%;
+    max-width: 300px;
     color: wheat;
   }
   
@@ -50,5 +51,10 @@
 
   .shop{
     color:wheat;
+    margin: 0 auto;
+  }
+  .new{
+    color:white;
+    margin: 0 auto;
   }
   
