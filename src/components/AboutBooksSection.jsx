@@ -46,6 +46,14 @@ In diesem Buch gebe ich einen sehr persönlichen Einblick in meinen Weg durch sc
 </p>
 <br />
 <br />
+ <br />
+            <br />
+            Schizophrenie & Künstliche Intelligenz - Neue Wege zur Heilung und Selbstermächtigung:
+<p>
+In diesem Buch gebe ich einen Einblick in in dei Welt der Schizophrenie in Zeiten der Künstlichen Intelligenz – es ist ein frühes Erwachen, mit einem Blick in die Zukunft der medizinischen Betreung. KI wird in Zukunft einen starken einfluss auf die Medizin und auf die Behandlung von Schizophrenie haben, trozdem plädiere ich dafür, dass Patienten nicht einfach zu Daten verkommen sondern, das Menschlichkeit und Empathie die wichtigsten Werkzeuge in der Behandlung der Betroffenen bleibt.
+</p>
+<br />
+<br />
 Ein Werk für den Wandel:
 <p>
 Diese sechs Bücher sind nicht nur Erfahrungsberichte, sondern Impulse für eine neue Sichtweise auf psychische Erkrankung, Heilung und Bewusstseinsentwicklung. Sie verbinden Wissenschaft, Spiritualität und Praxis in einer Weise, die Menschen berühren und stärken soll – ob Betroffene, Angehörige oder Fachpersonen. Ich verstehe die Reihe als ein Gesamtkunstwerk, das sowohl individuelle als auch gesellschaftliche Veränderung begleiten kann.
