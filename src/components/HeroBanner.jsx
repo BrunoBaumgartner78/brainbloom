@@ -55,6 +55,10 @@ export default function HeroFull() {
         </p>
         <Link href="/blog">
           <button className={styles.button}>
+             <span></span>
+             <span></span>
+             <span></span>
+              <span></span>
             Mehr erfahren
           </button>
         </Link>

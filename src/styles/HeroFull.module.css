@@ -48,7 +48,7 @@
   
   .button {
     padding: 0.75rem 1.5rem;
-    background-color: linear-gradient(to bottom, #78d4bd, #d7f9f1);
+    background-color: #1d735d6a;
     color: white;
     border: none;
     border-radius: 0.75rem;
@@ -58,7 +58,7 @@
   }
   
   .button:hover {
-    background-color: wheat;
+    background-color: rgba(245, 222, 179, 0.414);
     color: #000;
   }
   

@@ -1,7 +1,7 @@
 
 .booksSection {
     padding: 4rem 2rem;
-    background: linear-gradient(to bottom, #78d4bd, #d7f9f1);
+    background: linear-gradient(to bottom, #f0f3f2, #e3fef8);
 
     text-align: center;
   }
@@ -50,7 +50,7 @@
   }
 
   .shop{
-    color:wheat;
+    color:rgb(63, 136, 74);
     margin: 0 auto;
   }
   .new{
