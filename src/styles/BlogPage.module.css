@@ -1,6 +1,6 @@
 .main {
     padding: 3rem 2rem;
-    background-color: #1d735d; /* Hellblauer Hintergrund */
+    background-color: #c2f5e8; /* Hellblauer Hintergrund */
     min-height: 100vh;
     margin: 0;
   }
@@ -12,7 +12,7 @@
   }
   
   .card {
-    background-color: wheat;
+    background-color:  linear-gradient(to bottom, #f2f1d4, #f2cf9f);
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;

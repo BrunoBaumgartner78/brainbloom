@@ -1,7 +1,7 @@
 
 .booksSection {
     padding: 4rem 2rem;
-    background: linear-gradient(to bottom, #1d735d, #39977f);
+    background: linear-gradient(to bottom, #78d4bd, #d7f9f1);
 
     text-align: center;
   }
@@ -20,7 +20,7 @@
   }
   
   .card {
-    background: #39977f;
+    background: linear-gradient(to bottom, #78d4bd, #d7f9f1);
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -54,7 +54,7 @@
     margin: 0 auto;
   }
   .new{
-    color:white;
+    color:rgb(66, 66, 66);
     margin: 0 auto;
   }
   

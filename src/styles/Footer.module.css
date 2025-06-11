@@ -1,6 +1,6 @@
 .footer {
-    background: linear-gradient(to right, #1d735d, #39977f);
-    color: white;
+    background: linear-gradient(to bottom, #78d4bd, #d7f9f1);
+    color: rgb(48, 131, 52);
     padding: 3rem 1rem 2rem;
     font-size: 0.95rem;
   }
@@ -45,7 +45,7 @@
   }
   
   .links a {
-    color: white;
+    color: rgb(42, 86, 49);
     text-decoration: none;
     transition: opacity 0.2s ease;
   }
