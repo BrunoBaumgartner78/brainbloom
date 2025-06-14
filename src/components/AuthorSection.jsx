@@ -29,7 +29,7 @@ export default function AuthorSection() {
               ✉ Kontakt
             </a>
             <a
-              href="https://www.facebook.com/people/Bruno-Baumgartner/pfbid0QftdpxnhsBpEoGZ1mdgNRdDvEwGQ7jVUXwB8qDtyvc2NbXGWdQoUizk3f8cMjL7Xl/?comment_id=Y29tbWVudDoxMTYwNjMyNzQyMDg4MjM1XzU5MjM2MzY3MDI3NzM2NQ%3D%3D"
+              href="https://www.facebook.com/profile.php?id=61577115341816"
               className={styles.link}
               target="_blank"
               rel="noopener noreferrer"
