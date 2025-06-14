@@ -18,14 +18,13 @@ const geistMono = Geist_Mono({
 // ✅ Metadaten für SEO, Social Media & Plattformen
 export const metadata = {
 
-  title: "Bruno Baumgartner – Bewusstsein, Wissenschaft & Heilung",
+  title: "Bruno Baumgartner – Bewusstsein, Wissenschaft & Reflexion",
   description:
     "Bruno Baumgartner ist Autor zur Erforschung von Schizophrenie, Bewusstsein, Darmgesundheit und spirituellen Heilungswegen.",
   keywords: [
     "Schizophrenie",
     "Bewusstsein",
     "Darm-Hirn-Achse",
-    "Heilung",
     "Spiritualität",
     "Psychose",
     "BrainBloom",
@@ -34,7 +33,7 @@ export const metadata = {
   creator: "Bruno Baumgartner",
   metadataBase: new URL("https://brainbloom.ch"),
   openGraph: {
-    title: "Bruno Baumgartner – Bewusstsein, Wissenschaft & Heilung",
+    title: "Bruno Baumgartner – Bewusstsein, Wissenschaft & Reflexion",
     description:
       "Plattform für Wissen, Erfahrung und Forschung rund um Schizophrenie, Darm und Geist.",
     url: "https://brainbloom.ch",
@@ -52,9 +51,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bruno Baumgartner – Bewusstsein & Heilung",
+    title: "Bruno Baumgartner – Bewusstsein & Reflexion",
     description:
-      "Plattform für Schizophrenie, Mikrobiom und spirituelle Heilung.",
+      "Plattform für Schizophrenie, Mikrobiom und spirituelle Reflexion.",
     images: ["/Author.jpg"],
     creator: "@brainbloom",
   },
