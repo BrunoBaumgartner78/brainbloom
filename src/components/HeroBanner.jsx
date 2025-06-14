@@ -48,10 +48,10 @@ export default function HeroFull() {
 
       <div className={styles.content}>
         <h1 className={styles.title}>
-          Offizielle Seite des Schizophrenie Autor Bruno Baumgartner
+          Offizielle Seite des Autors Bruno Baumgartner
         </h1>
         <p className={styles.subtitle}>
-          Eine Reise zu Klarheit, Heilung und Bewusstsein
+          Eine Reise zu Klarheit, Reflexion und Bewusstsein
         </p>
         <Link href="/blog">
           <button className={styles.button}>

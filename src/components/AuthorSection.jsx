@@ -21,8 +21,9 @@ export default function AuthorSection() {
             25 Jahren mit Schizophrenie lebt. Seine Werke verbinden persönliche
             Erfahrungen mit wissenschaftlichen Erkenntnissen über Psyche,
             Ernährung und spirituelle Entwicklung. Seine Mission: Aufklärung,
-            Entstigmatisierung und Heilung fördern.
+            Entstigmatisierung und Inspiration fördern.
           </p>
+          <p className={styles.heading}>Meine Bücher ersetzen keine Medizinische oder Therapeutische Behandlung.</p>
           <div className={styles.links}>
             <a href="mailto:bruno@brainbloom.ch" className={styles.link}>
               ✉ Kontakt
