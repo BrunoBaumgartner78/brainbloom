@@ -48,7 +48,7 @@ export default function HeroFull() {
 
       <div className={styles.content}>
         <h1 className={styles.title}>
-          Offizielle Seite des Autors Bruno Baumgartner
+          Offizielle Seite des Autoren Bruno Baumgartner
         </h1>
         <p className={styles.subtitle}>
           Eine Reise zu Klarheit, Reflexion und Bewusstsein

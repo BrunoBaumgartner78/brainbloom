@@ -39,10 +39,10 @@ export default function NewSection() {
         ))}
         
       </div>
-       <p className={styles.new}>Aktuell wird ein spannendes Kapittel in der Menschheitsgeschichte geschrieben, die Einführung von Künstlicher Intelligenz für die breite Masse.</p>
+       <p className={styles.new}>Aktuell wird ein spannendes Kapitel in der Menschheitsgeschichte geschrieben, die Einführung von Künstlicher Intelligenz für die breite Masse.</p>
         <p className={styles.new}>Das erste Mal in der Geschichte ist der Mensch nicht mehr das intelligenteste Wesen auf der Erde, das wirft auch wichtige Fragen für das Leben mit Schizophrenie auf.</p>
-       <p className={styles.new}>In diesem Buch gehe ich auf Chancen und Risiken der Künstlichen Intelligenz im Bezug auf das Leben mit Schizophrenie ein.</p>
-           <p className={styles.new}>Ich betone dabei dass sich wohl neue Perspekiven bilden, aber warne auch davor, dass von Schizophrenie Betroffene zu Daten verkommen. Ich betone in diesem Buch, dass trotz Inovation die Menschlichkeit und Empathie, die wichtigsten Werkzeuge der Integration bleiben müssen.</p>
+       <p className={styles.new}>In diesem Buch gehe ich auf Chancen und Risiken der Künstlichen Intelligenz bezüglich dem Leben mit Schizophrenie ein.</p>
+           <p className={styles.new}>Ich betone dabei, dass sich wohl neue Perspektiven bilden, aber warne auch davor, dass von Schizophrenie Betroffene zu Daten verkommen. Ich betone in diesem Buch, dass trotz Innovation die Menschlichkeit und Empathie, die wichtigsten Werkzeuge der Integration bleiben müssen.</p>
     </section>
   );
 }

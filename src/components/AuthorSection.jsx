@@ -23,7 +23,7 @@ export default function AuthorSection() {
             Ernährung und spirituelle Entwicklung. Seine Mission: Aufklärung,
             Entstigmatisierung und Inspiration fördern.
           </p>
-          <p className={styles.heading}>Meine Bücher ersetzen keine Medizinische oder Therapeutische Behandlung.</p>
+          <p className={styles.heading}>Meine Bücher ersetzen keine medizinische oder therapeutische Behandlung.</p>
           <div className={styles.links}>
             <a href="mailto:bruno@brainbloom.ch" className={styles.link}>
               ✉ Kontakt
