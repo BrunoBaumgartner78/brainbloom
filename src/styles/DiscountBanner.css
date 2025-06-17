@@ -1,0 +1,78 @@
+/* DiscountBanner.css */
+
+.discount-banner-wrapper {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffe5b4, #ffcba4); /* Pfirsich-Aprikose */
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 200, 150, 0.5);
+  margin: 2rem auto;
+  max-width: 90%;
+}
+
+.discount-banner {
+  position: relative;
+  z-index: 10;
+}
+
+.discount-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #5e3b1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.discount-subtext {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #804000;
+}
+
+.moon {
+  font-size: 2rem;
+  animation: spin 5s linear infinite;
+  display: inline-block;
+}
+
+/* Kometenschauer */
+.comet-rain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.comet {
+  position: absolute;
+  width: 2px;
+  height: 40px;
+  background: linear-gradient(to bottom, #fff, transparent);
+  animation: fall 3s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh) rotate(45deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
