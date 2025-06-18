@@ -16,9 +16,7 @@
 
 .loader-content {
   text-align: center;
-
-  color: wheat;
-  
+  color: wheat;  
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 0.05em;           /* etwas mehr Abstand für Future‑Look */
   text-shadow:
@@ -28,8 +26,8 @@
 }
 
 .load{
-  top: 5px;
     color:wheat;
+    padding-top: 50px;
 }
 
 
@@ -52,6 +50,7 @@
   font-size: 6rem;           /* passt in den Wrapper */
   line-height: 1;            /* verhindert unerwartete Leerraum-Offsets */
   pointer-events: none;
+
   
 }
 

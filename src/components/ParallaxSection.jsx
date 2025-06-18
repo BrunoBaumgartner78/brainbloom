@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import '../styles/ParallaxSection.css';
 
-const ParallaxSection = ({ background, speed = 0.3, height = '100vh', children }) => {
+const ParallaxSection = ({ background, speed = 0.3, height = '110vh', children }) => {
   const bgRef = useRef(null);
 
   useEffect(() => {

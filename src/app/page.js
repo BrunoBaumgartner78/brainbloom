@@ -47,7 +47,7 @@ export default function Home() {
   <div style={{ color: '#fff', textAlign: 'center' }}>
   <h1>✨ Durch die Dunkelheit ins Licht</h1>
   <p className="parallaxText">
-  Der erste Schritt ist der schwerste, doch in ihm liegt die Erkenntnis, dass die Dunkelheit nur der Anfang des Lichts ist.
+  Wenn der Verstand zerbricht, wird der Geist frei, und in den Trümmern der Logik tanzt die göttliche Wahrheit.
 
   </p>
 </div>
