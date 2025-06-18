@@ -46,33 +46,32 @@
   pointer-events: none;
   overflow: hidden;
   z-index: 1;
+  
 }
 
 .comet {
   position: absolute;
-  width: 2px;
-  height: 40px;
-  background: linear-gradient(to bottom, #fff, transparent);
-  animation: fall 3s linear infinite;
-  opacity: 0.6;
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(to left, white, transparent);
+  transform: rotate(-45deg);
+  opacity: 0;
+  animation: flyComet 3s linear infinite;
+  pointer-events: none;
 }
-
-@keyframes fall {
+@keyframes flyComet {
   0% {
-    transform: translateY(-100vh) rotate(45deg);
-    opacity: 0.8;
-  }
-  100% {
-    transform: translateY(100vh) rotate(45deg);
+    transform: translate(0, 0) rotate(135deg);
     opacity: 0;
   }
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
+  5% {
+    opacity: 1;
   }
-  to {
-    transform: rotate(360deg);
+  95% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-100vw, 100vh) rotate(135deg);
+    opacity: 0;
   }
 }
