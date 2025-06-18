@@ -20,8 +20,7 @@ export default function Home() {
   <h1>✨ Willkommen in meinem Kosmos</h1>
   <p className="parallaxText">
    Im Sturm der Verwirrung findest du das Tor zu den Sternen. Durch Chaos erwacht die Seele.
-<br />
-    Lass dich tragen von der Stille zwischen den Sternen.
+
   </p>
 </div>
 

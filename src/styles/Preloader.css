@@ -28,6 +28,7 @@
 }
 
 .load{
+  top: 5px;
     color:wheat;
 }
 
@@ -51,6 +52,7 @@
   font-size: 6rem;           /* passt in den Wrapper */
   line-height: 1;            /* verhindert unerwartete Leerraum-Offsets */
   pointer-events: none;
+  
 }
 
 /* -- Keyframes für die Rotation -- */
