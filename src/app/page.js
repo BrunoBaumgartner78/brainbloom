@@ -19,7 +19,7 @@ export default function Home() {
   <div style={{ color: '#fff', textAlign: 'center' }}>
   <h1>✨ Willkommen in meinem Kosmos</h1>
   <p className="parallaxText">
-   "Im Sturm der Verwirrung findest du das Tor zu den Sternen. Durch Chaos erwacht die Seele."
+   Im Sturm der Verwirrung findest du das Tor zu den Sternen. Durch Chaos erwacht die Seele.
 <br />
     Lass dich tragen von der Stille zwischen den Sternen.
   </p>
@@ -34,7 +34,7 @@ export default function Home() {
   <div style={{ color: '#fff', textAlign: 'center' }}>
   <h1>✨ Brainbloom</h1>
   <p className="parallaxText">
-  "Durch jede Wunde fließt das Licht der Wahrheit in die Seele, denn nur im Schmerz erwachen wir zum Glanz des Göttlichen."
+  Durch jede Wunde fließt das Licht der Wahrheit in die Seele, denn nur im Schmerz erwachen wir zum Glanz des Göttlichen.
 
 
   </p>
@@ -48,7 +48,7 @@ export default function Home() {
   <div style={{ color: '#fff', textAlign: 'center' }}>
   <h1>✨ Durch die Dunkelheit ins Licht</h1>
   <p className="parallaxText">
-  "Der erste Schritt ist der schwerste, doch in ihm liegt die Erkenntnis, dass die Dunkelheit nur der Anfang des Lichts ist."
+  Der erste Schritt ist der schwerste, doch in ihm liegt die Erkenntnis, dass die Dunkelheit nur der Anfang des Lichts ist.
 
   </p>
 </div>
