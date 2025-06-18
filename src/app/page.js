@@ -43,16 +43,7 @@ export default function Home() {
         <NewSection />
       <AboutBooksSection />
       <BlogPreviewSection />
-      <ParallaxSection background="./brainbloom.webp" speed={0.3} height="100vw">
-  <div style={{ color: '#fff', textAlign: 'center' }}>
-  <h1>✨ Durch die Dunkelheit ins Licht</h1>
-  <p className="parallaxText">
-  Wenn der Verstand zerbricht, wird der Geist frei, und in den Trümmern der Logik tanzt die göttliche Wahrheit.
-
-  </p>
-</div>
-
-</ParallaxSection>
+  
       <Footer />
       {/* Weitere Sektionen */}
     </main>
