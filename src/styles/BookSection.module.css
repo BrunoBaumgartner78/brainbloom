@@ -57,4 +57,42 @@
     color:rgb(66, 66, 66);
     margin: 0 auto;
   }
+
+  .revealFooterContainer {
+  margin-bottom: -100vh;     /* Höhe des Footers "überlappen" */
+  padding-bottom: 100vh;     /* Inhalt wird trotzdem lesbar */
+  position: relative;
+  z-index: 2;
+}
+
   
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+/* Grundzustand: Karten sind unsichtbar, leicht nach links verschoben und verkleinert */
+.card {
+  opacity: 0; /* Startzustand */
+  transform: translateX(-15px) scale(0.95);
+  transition: none; /* Verhindert Konflikte mit transition */
+}
+
+.card.visible {
+  animation-name: zoomInRight;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards; /* wichtig! */
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes zoomInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-15px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}

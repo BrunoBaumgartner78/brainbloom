@@ -1,0 +1,46 @@
+.parallax-section {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.parallax-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150%; /* Mehr als 100%, damit das Bild „nachziehen“ kann */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+  z-index: 0;
+  transition: transform 0.1s ease-out;
+}
+
+.parallax-content {
+    top:10%;
+  position: relative;
+  z-index: 1;
+  padding: 5rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.parallaxText{
+    text-align: center;
+    font-size: 4rem;
+  color: wheat;
+  
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.05em;           /* etwas mehr Abstand für Future‑Look */
+  text-shadow:
+    0 0 4px rgba(255,255,255,0.8),
+    0 0 8px rgba(255,255,255,0.6);  /* leichter Glow */
+ 
+}
+
+@media screen and (max-width: 600px){
+    .parallaxText{
+        font-size: 1rem;
+    }
+}

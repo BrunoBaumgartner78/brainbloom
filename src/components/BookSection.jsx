@@ -1,6 +1,9 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/BookSection.module.css";
+import { useEffect, useRef } from "react";
+
 
 const books = [
   {
@@ -35,12 +38,39 @@ const books = [
   },
 ];
 
+
 export default function BooksSection() {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const cards = containerRef.current.querySelectorAll(`.${styles.card}`);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(styles.visible);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    cards.forEach((card) => {
+      observer.observe(card);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className={styles.booksSection} id="books">
       <h2 className={styles.heading}>Meine Bücher</h2>
       <p className={styles.shop}>Mit einem Klick zum Shop</p>
-      <div className={styles.grid}>
+      <div className={styles.grid} ref={containerRef}>
         {books.map((book, index) => (
           <a
             key={index}
@@ -48,6 +78,7 @@ export default function BooksSection() {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.card}
+            style={{ animationDelay: `${index * 150}ms` }} // Delay pro Karte
           >
             <div>
               <Image

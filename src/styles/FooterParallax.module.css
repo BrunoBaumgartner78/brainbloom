@@ -1,0 +1,42 @@
+.footerSpacer {
+  height: 400px; /* Höhe des Footers als Platzhalter im Content */
+}
+
+.footerParallax {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30vh; /* 30% der Viewport-Höhe */
+  min-height: 200px; /* mindestens 200px */
+  max-height: 400px; /* maximal 400px */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: -1;
+  transform: translateY(20px);
+  transition: height 0.3s ease;
+}
+
+/* Für kleinere Bildschirme */
+@media (max-width: 600px) {
+  .footerParallax {
+    height: 25vh;
+    min-height: 150px;
+    transform: translateY(10px);
+  }
+}
+
+
+
+
+.footerOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

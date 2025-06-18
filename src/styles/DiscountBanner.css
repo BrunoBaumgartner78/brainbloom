@@ -1,9 +1,10 @@
 /* DiscountBanner.css */
 
+/* === Wrapper === */
 .discount-banner-wrapper {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #ffe5b4, #ffcba4); /* Pfirsich-Aprikose */
+  background: linear-gradient(135deg, #ffe5b4, #ffcba4);
   padding: 1.5rem;
   border-radius: 1rem;
   text-align: center;
@@ -12,9 +13,41 @@
   max-width: 90%;
 }
 
+/* === Warp-Sterne === */
+.starfield {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: warp 1.5s linear infinite;
+}
+
+@keyframes warp {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--dx), var(--dy)) scale(2);
+    opacity: 0;
+  }
+}
+
+/* === Banner-Inhalt === */
 .discount-banner {
   position: relative;
-  z-index: 10;
+  z-index: 3;
 }
 
 .discount-title {
@@ -22,31 +55,46 @@
   font-weight: bold;
   color: #5e3b1d;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
 }
 
 .discount-subtext {
-  font-size: 1rem;
   margin-top: 0.5rem;
+  font-size: 1rem;
   color: #804000;
 }
 
-.moon {
-  font-size: 2rem;
-  animation: spin 5s linear infinite;
+/* === Mond-Rotation (perfekt zentriert) === */
+.moon-wrapper {
+  position: relative;
+  width: 2.8rem;           /* Container quadratisch */
+  height: 2.8rem;          /* Container quadratisch */
+  transform-origin: center center;
+  animation: spin 6s linear infinite;
   display: inline-block;
 }
 
-/* Kometenschauer */
+.moon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
+
+
+/* === Kometenschauer === */
 .comet-rain {
   position: absolute;
   inset: 0;
+  z-index: 2;
   pointer-events: none;
   overflow: hidden;
-  z-index: 1;
-  
 }
 
 .comet {
@@ -57,8 +105,8 @@
   transform: rotate(-45deg);
   opacity: 0;
   animation: flyComet 3s linear infinite;
-  pointer-events: none;
 }
+
 @keyframes flyComet {
   0% {
     transform: translate(0, 0) rotate(135deg);
