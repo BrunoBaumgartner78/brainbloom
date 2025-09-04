@@ -6,35 +6,26 @@ import { useEffect, useRef } from "react";
 
 
 const books = [
+ 
   {
-    title: "Die Qualia der Anderen Teil 1",
-    image: "/bewusstseinBewusstsein.webp",
-    link: "https://www.amazon.de/Die-Qualia-Anderen-Das-Bewusstsein/dp/B0DSJV3FLM/ref=sr_1_5?crid=35PLBN36GK1LB&dib=eyJ2IjoiMSJ9.qCfAh__VzJMFegW1THNcc3E2BbGq85WqpWixgyD937mSzO0zvtupoXlUoE5aK8s7Cl1K20QRFvlQZeKBztkBgnjJrETS_M-H5zZaJKRD6Uy3Ru9-GxbG9wQWaz4tz2ku3-J5L04OgrNwtN3ZUFLPHlXCriIgvhGMVcQ9LPd7dSbQ5SyCiVAougZiX74oHzqu1ixlEo2L2qNzcduGQIwaz9JaAc7rkz50Ov86TUCbRWY.rl6jPzIHBJ-jXUBtrHp10sHSaWMZAgx3ATs0aoa9HYM&dib_tag=se&keywords=bruno+baumgartner+schizophrenie&qid=1746369445&sprefix=bruno+baumgartner%2Caps%2C118&sr=8-5",
-  },
-  {
-    title: "Die Qualia der Anderen Teil 2",
-    image: "/nochBewusster.webp",
-    link: "https://www.amazon.de/Die-Qualia-Anderen-Das-Bewusstsein/dp/B0DSJXV8RF/ref=sr_1_6?crid=35PLBN36GK1LB&dib=eyJ2IjoiMSJ9.qCfAh__VzJMFegW1THNcc3E2BbGq85WqpWixgyD937mSzO0zvtupoXlUoE5aK8s7Cl1K20QRFvlQZeKBztkBgnjJrETS_M-H5zZaJKRD6Uy3Ru9-GxbG9wQWaz4tz2ku3-J5L04OgrNwtN3ZUFLPHlXCriIgvhGMVcQ9LPd7dSbQ5SyCiVAougZiX74oHzqu1ixlEo2L2qNzcduGQIwaz9JaAc7rkz50Ov86TUCbRWY.rl6jPzIHBJ-jXUBtrHp10sHSaWMZAgx3ATs0aoa9HYM&dib_tag=se&keywords=bruno+baumgartner+schizophrenie&qid=1746369445&sprefix=bruno+baumgartner%2Caps%2C118&sr=8-6",
-  },
-  {
-    title: "Die Qualia der Anderen Teil 3",
+    title: "Die Qualia der Anderen; Bewusstsein und Schizophrenie",
     image: "/bewusstseinUndSchizophrenie.webp",
-    link: "https://www.amazon.de/Die-Qualia-Anderen-Bewusstsein-Schizophrenie/dp/B0DSJVV5DZ/ref=sr_1_4?crid=35PLBN36GK1LB&dib=eyJ2IjoiMSJ9.qCfAh__VzJMFegW1THNcc3E2BbGq85WqpWixgyD937mSzO0zvtupoXlUoE5aK8s7Cl1K20QRFvlQZeKBztkBgnjJrETS_M-H5zZaJKRD6Uy3Ru9-GxbG9wQWaz4tz2ku3-J5L04OgrNwtN3ZUFLPHlXCriIgvhGMVcQ9LPd7dSbQ5SyCiVAougZiX74oHzqu1ixlEo2L2qNzcduGQIwaz9JaAc7rkz50Ov86TUCbRWY.rl6jPzIHBJ-jXUBtrHp10sHSaWMZAgx3ATs0aoa9HYM&dib_tag=se&keywords=bruno+baumgartner+schizophrenie&qid=1746369445&sprefix=bruno+baumgartner%2Caps%2C118&sr=8-4",
+    link: "https://www.amazon.de/dp/B0FPR9MGPQ/ref=sr_1_1?crid=3TR5WABXACMFA&dib=eyJ2IjoiMSJ9.M4Nw2OFQgmH2W1x2Xq6aMylthwh1A7crPWx8p1PbI1f10w_mHJcnnB2v8GOIGG4okMAmnvqconVT3Z4v7gBHYa5_XoG0mp8DuO-jy_JVInP-uaW3sBqBbpR2DYZ5X5uCGPnAGYbG9_T_ePv8JRzwty0nnz_We9wwqJAY2vIKvnRlf_hfBtnxKuOM8vUnNrl9PSgbdF2_V_7aafT5VuHrGbR4zr9GsMIsyCuNN7xbF-4.yZnJSQyyyuCdQG6fnNo97qWYkuzwJnohYnDLzqiS1tY&dib_tag=se&keywords=schizophrenie+bruno+baumgartner&qid=1757009951&sprefix=schizophrenie%2Caps%2C110&sr=8-1",
   },
   {
-    title: "Durch die Dunkelheit ins Licht",
+    title: "Durch die Dunkelheit ins Licht; Spirituelle Heilung in der Schizophrenie",
     image: "/dunkelheit.webp",
-    link: "https://www.amazon.de/Durch-die-Dunkelheit-Licht-Schizophrenie/dp/B0DSJWNQFV/ref=sr_1_2?crid=35PLBN36GK1LB&dib=eyJ2IjoiMSJ9.qCfAh__VzJMFegW1THNcc3E2BbGq85WqpWixgyD937mSzO0zvtupoXlUoE5aK8s7Cl1K20QRFvlQZeKBztkBgnjJrETS_M-H5zZaJKRD6Uy3Ru9-GxbG9wQWaz4tz2ku3-J5L04OgrNwtN3ZUFLPHlXCriIgvhGMVcQ9LPd7dSbQ5SyCiVAougZiX74oHzqu1ixlEo2L2qNzcduGQIwaz9JaAc7rkz50Ov86TUCbRWY.rl6jPzIHBJ-jXUBtrHp10sHSaWMZAgx3ATs0aoa9HYM&dib_tag=se&keywords=bruno+baumgartner+schizophrenie&qid=1746369445&sprefix=bruno+baumgartner%2Caps%2C118&sr=8-2",
+    link: "https://www.amazon.de/Durch-die-Dunkelheit-Licht-Schizophrenie/dp/B0DSJWNQFV/ref=sr_1_6?crid=3TR5WABXACMFA&dib=eyJ2IjoiMSJ9.M4Nw2OFQgmH2W1x2Xq6aMylthwh1A7crPWx8p1PbI1f10w_mHJcnnB2v8GOIGG4okMAmnvqconVT3Z4v7gBHYa5_XoG0mp8DuO-jy_JVInP-uaW3sBqBbpR2DYZ5X5uCGPnAGYbG9_T_ePv8JRzwty0nnz_We9wwqJAY2vIKvnRlf_hfBtnxKuOM8vUnNrl9PSgbdF2_V_7aafT5VuHrGbR4zr9GsMIsyCuNN7xbF-4.yZnJSQyyyuCdQG6fnNo97qWYkuzwJnohYnDLzqiS1tY&dib_tag=se&keywords=schizophrenie+bruno+baumgartner&qid=1757009951&sprefix=schizophrenie%2Caps%2C110&sr=8-6",
   },
   {
-    title: "Mein Weg zur inneren Balance",
+    title: "Mein Weg zur inneren Balance; Arbeitsbuch für den Alltag mit Schizophrenie",
     image: "/Arbeitsbuch.webp",
-    link: "https://www.amazon.de/Mein-Weg-inneren-Balance-Schizophrenie/dp/B0F5MGGPG2/ref=sr_1_3?crid=35PLBN36GK1LB&dib=eyJ2IjoiMSJ9.qCfAh__VzJMFegW1THNcc3E2BbGq85WqpWixgyD937mSzO0zvtupoXlUoE5aK8s7Cl1K20QRFvlQZeKBztkBgnjJrETS_M-H5zZaJKRD6Uy3Ru9-GxbG9wQWaz4tz2ku3-J5L04OgrNwtN3ZUFLPHlXCriIgvhGMVcQ9LPd7dSbQ5SyCiVAougZiX74oHzqu1ixlEo2L2qNzcduGQIwaz9JaAc7rkz50Ov86TUCbRWY.rl6jPzIHBJ-jXUBtrHp10sHSaWMZAgx3ATs0aoa9HYM&dib_tag=se&keywords=bruno+baumgartner+schizophrenie&qid=1746369445&sprefix=bruno+baumgartner%2Caps%2C118&sr=8-3",
+    link: "https://www.amazon.de/Mein-Weg-inneren-Balance-Schizophrenie/dp/B0F5MGGPG2/ref=sr_1_4?crid=3TR5WABXACMFA&dib=eyJ2IjoiMSJ9.M4Nw2OFQgmH2W1x2Xq6aMylthwh1A7crPWx8p1PbI1f10w_mHJcnnB2v8GOIGG4okMAmnvqconVT3Z4v7gBHYa5_XoG0mp8DuO-jy_JVInP-uaW3sBqBbpR2DYZ5X5uCGPnAGYbG9_T_ePv8JRzwty0nnz_We9wwqJAY2vIKvnRlf_hfBtnxKuOM8vUnNrl9PSgbdF2_V_7aafT5VuHrGbR4zr9GsMIsyCuNN7xbF-4.yZnJSQyyyuCdQG6fnNo97qWYkuzwJnohYnDLzqiS1tY&dib_tag=se&keywords=schizophrenie+bruno+baumgartner&qid=1757009951&sprefix=schizophrenie%2Caps%2C110&sr=8-4",
   },
   {
-    title: "Schizophrenie, Ernährung und Diät",
+    title: "Schizophrenie, Ernährung und Diät; Schritt für Schirtt in Richtung Ernährungspsychiatrie",
     image: "/Ernährung.webp",
-    link: "https://www.amazon.de/Schizophrenie-Ern%C3%A4hrung-Di%C3%A4t-Ern%C3%A4hrungs-Psychiatrie/dp/B0F4PJZB1P/ref=sr_1_1?crid=35PLBN36GK1LB&dib=eyJ2IjoiMSJ9.qCfAh__VzJMFegW1THNcc3E2BbGq85WqpWixgyD937mSzO0zvtupoXlUoE5aK8s7Cl1K20QRFvlQZeKBztkBgnjJrETS_M-H5zZaJKRD6Uy3Ru9-GxbG9wQWaz4tz2ku3-J5L04OgrNwtN3ZUFLPHlXCriIgvhGMVcQ9LPd7dSbQ5SyCiVAougZiX74oHzqu1ixlEo2L2qNzcduGQIwaz9JaAc7rkz50Ov86TUCbRWY.rl6jPzIHBJ-jXUBtrHp10sHSaWMZAgx3ATs0aoa9HYM&dib_tag=se&keywords=bruno+baumgartner+schizophrenie&qid=1746369445&sprefix=bruno+baumgartner%2Caps%2C118&sr=8-1",
+    link: "https://www.amazon.de/Schizophrenie-Ern%C3%A4hrung-Di%C3%A4t-Ern%C3%A4hrungs-Psychiatrie/dp/B0F4PJZB1P/ref=sr_1_5?crid=3TR5WABXACMFA&dib=eyJ2IjoiMSJ9.M4Nw2OFQgmH2W1x2Xq6aMylthwh1A7crPWx8p1PbI1f10w_mHJcnnB2v8GOIGG4okMAmnvqconVT3Z4v7gBHYa5_XoG0mp8DuO-jy_JVInP-uaW3sBqBbpR2DYZ5X5uCGPnAGYbG9_T_ePv8JRzwty0nnz_We9wwqJAY2vIKvnRlf_hfBtnxKuOM8vUnNrl9PSgbdF2_V_7aafT5VuHrGbR4zr9GsMIsyCuNN7xbF-4.yZnJSQyyyuCdQG6fnNo97qWYkuzwJnohYnDLzqiS1tY&dib_tag=se&keywords=schizophrenie+bruno+baumgartner&qid=1757009951&sprefix=schizophrenie%2Caps%2C110&sr=8-5",
   },
 ];
 

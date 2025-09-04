@@ -6,9 +6,9 @@ import styles from "../styles/BookSection.module.css";
 
 const books = [
   {
-    title: "Schizophrenie im Zeitalter der Künstlichen Intelligenz",
-    image: "/KI.webp",
-    link: "https://www.amazon.de/dp/B0FCC8H6B6/ref=sr_1_2?crid=2BIGPT9AH0RH1&dib=eyJ2IjoiMSJ9.7Pfav19rEHQdqI6wrF_n5WO755GVQb97fvCwHayIQvaTLNOjHZnQJEbAFpwM14CeK32ybFltmqfXQmJzqwV0k57XVA9qHPkgTRgo_q3rUWo5loOysanSDNtAzBr8tNlIl_NuasfiMpLS-QFkd-E4WECFS2rKs4OzALkaqfG4kyr11JCz2SAlmU75EAGw3A0KlKAduPU0kDE_7GrUtS2NnEARPPqCBYoPpVwMj-e4VrE.Ns-_GMWQLbQIe4MA06BX8GCwTo6pX8bydnn-nbcYqa0&dib_tag=se&keywords=schizophrenie+bruno+baumgartner&qid=1749310542&sprefix=schizophrenie%2Caps%2C117&sr=8-2",
+    title: "Liebe im Schatten; Über Schizophrenie Verlust und die Kraft des Herzens",
+    image: "/Liebe.webp",
+    link: "https://www.amazon.de/Liebe-Schatten-Schizophrenie-Verlust-Herzens/dp/B0FPCXGKYQ/ref=sr_1_3?crid=3TR5WABXACMFA&dib=eyJ2IjoiMSJ9.M4Nw2OFQgmH2W1x2Xq6aMylthwh1A7crPWx8p1PbI1f10w_mHJcnnB2v8GOIGG4okMAmnvqconVT3Z4v7gBHYa5_XoG0mp8DuO-jy_JVInP-uaW3sBqBbpR2DYZ5X5uCGPnAGYbG9_T_ePv8JRzwty0nnz_We9wwqJAY2vIKvnRlf_hfBtnxKuOM8vUnNrl9PSgbdF2_V_7aafT5VuHrGbR4zr9GsMIsyCuNN7xbF-4.yZnJSQyyyuCdQG6fnNo97qWYkuzwJnohYnDLzqiS1tY&dib_tag=se&keywords=schizophrenie+bruno+baumgartner&qid=1757009951&sprefix=schizophrenie%2Caps%2C110&sr=8-3",
   },
 ];
 
@@ -60,25 +60,26 @@ export default function NewSection() {
         ))}
       </div>
       <p className={styles.new}>
-        Aktuell wird ein spannendes Kapitel in der Menschheitsgeschichte
-        geschrieben, die Einführung von Künstlicher Intelligenz für die breite
-        Masse.
-      </p>
-      <p className={styles.new}>
-        Das erste Mal in der Geschichte ist der Mensch nicht mehr das
-        intelligenteste Wesen auf der Erde, das wirft auch wichtige Fragen für
-        das Leben mit Schizophrenie auf.
-      </p>
-      <p className={styles.new}>
-        In diesem Buch gehe ich auf Chancen und Risiken der Künstlichen
-        Intelligenz bezüglich dem Leben mit Schizophrenie ein.
-      </p>
-      <p className={styles.new}>
-        Ich betone dabei, dass sich wohl neue Perspektiven bilden, aber warne
-        auch davor, dass von Schizophrenie Betroffene zu Daten verkommen. Ich
-        betone in diesem Buch, dass trotz Innovation die Menschlichkeit und
-        Empathie, die wichtigsten Werkzeuge der Integration bleiben müssen.
-      </p>
+  Dieses Buch erzählt von einer besonderen Reise – von Liebe, die auch im
+  Schatten von Schizophrenie weiterlebt, von Verlust, der das Herz bricht, und
+  von der Kraft, die sich daraus neu entfalten kann.
+</p>
+<p className={styles.new}>
+  Es ist die Geschichte von Zerbrechlichkeit und Stärke zugleich, von Momenten
+  tiefer Dunkelheit und von der Liebe, die immer wieder einen Weg findet, Licht
+  in das Leben zu bringen.
+</p>
+<p className={styles.new}>
+  „Liebe im Schatten“ lädt dazu ein, den Blick nicht nur auf Krankheit und
+  Schmerz zu richten, sondern auf die Möglichkeiten von Nähe, Zärtlichkeit und
+  Mitgefühl – auch dort, wo die Gesellschaft oft Distanz schafft.
+</p>
+<p className={styles.new}>
+  Dieses Buch ist ein Plädoyer für Menschlichkeit, für das Verständnis füreinander
+  und für die Hoffnung, dass die Kraft des Herzens selbst im größten Zerfall
+  noch tragen und heilen kann.
+</p>
+
     </section>
   );
 }
