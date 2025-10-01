@@ -72,6 +72,20 @@ const posts = [
       image: "/shadow.webp",
       date: "2025-05-06"
     },
+    {title: "Complexus Immunitas Mentis: Eine neue Hypothese zu Schizophrenie",
+slug: "complexus-immunitas-mentis-eine-neue-hypothese-zu-schizophrenie",
+description: "Die Hypotesis Complexus Immunitas Mentis (HCIM) betrachtet Schizophrenie nicht nur als Erkrankung des Gehirns, sondern als Zusammenspiel von Darm, Immunsystem und Psyche. Sie eröffnet neue Perspektiven für Forschung, Therapie und Hoffnung für Betroffene.",
+image: "/hcim.webp",
+date: "2025-01-10"
+    },
+     {
+  title: "Complexus Immunitas Mentis: Die Epigenetik betreffend",
+  slug: "complexus-immunitas-mentis-hypothese-schizophrenie",
+  description:
+    "Die Hypotesis Complexus Immunitas Mentis (HCIM) betrachtet Schizophrenie nicht nur als Erkrankung des Gehirns, sondern als Zusammenspiel von Darm, Immunsystem und Psyche. Sie eröffnet neue Perspektiven für Forschung, Therapie und Hoffnung für Betroffene.",
+  image: "/hcim1.webp",
+  date: "2025-01-10",
+},
     // ...98 weitere
   ];
   
